@@ -1,0 +1,110 @@
+@media only screen and (max-width: 768px) {
+  /*******************************************************************/
+  /*                           NAVIGATION                            */
+  /*******************************************************************/
+
+  .menu-bar {
+    display: none;
+  }
+
+  .menu-mobile {
+    display: block;
+  }
+
+  /*******************************************************************/
+  /*                           HOME                                  */
+  /*******************************************************************/
+
+  /* HERO */
+  .hero-box__content {
+    left: 40%;
+  }
+
+  .boton {
+    margin-bottom: 20px;
+  }
+
+  /* footer */
+
+  /* social network */
+
+  .social__content {
+    justify-content: center;
+  }
+  .social__content p {
+    display: none;
+  }
+
+  p.footer-box__text {
+    display: none;
+  }
+
+  /*******************************************************************/
+  /*                           PAGE CONTACT                          */
+  /*******************************************************************/
+
+  .contact-box {
+    gap: 20px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /*******************************************************************/
+  /*                           HOME                                  */
+  /*******************************************************************/
+
+  /* HERO */
+  .hero-box__content {
+    left: 50%;
+  }
+
+  /* MODELOS */
+
+  .modelo:last-child {
+    display: none;
+  }
+
+  /* como funciona */
+  .como-funciona__content {
+    margin: 0 15px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, max-content);
+    grid-gap: 40px;
+  }
+
+  .como-funciona__content--box1 {
+    grid-column: unset;
+  }
+
+  .footer-box__menu {
+    text-align: center;
+  }
+
+  .footer-box__menu li a {
+    font-size: 75%;
+  }
+
+  /* MODELOS 
+    .modelos-box__gallery{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+        
+    }*/
+
+  .modelo {
+    /*object-position: top;*/
+    height: 300px;
+  }
+
+  /*******************************************************************/
+  /*                           SERVICIOS                             */
+  /*******************************************************************/
+
+  .servicios-content div div {
+    margin: 5px;
+  }
+
+  /*******************************************************************/
+  /*                          PAGE MODELOS                             */
+  /*******************************************************************/
+}

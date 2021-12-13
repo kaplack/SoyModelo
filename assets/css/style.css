@@ -1,0 +1,84 @@
+/* COMPONENTES */
+@import "componentes/general.css";
+@import "componentes/layout.css";
+@import url("./componentes/home.css");
+@import "componentes/footer.css";
+@import "componentes/header.css";
+@import "componentes/servicios.css";
+@import "componentes/modelos.css";
+@import "componentes/imodel.css";
+@import "componentes/contact.css";
+@import "componentes/imodel-post.css";
+
+@import "componentes/queries.css";
+
+/* typography */
+
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&family=Roboto:wght@400;500&display=swap");
+
+/* VARIABLES */
+
+:root {
+  --main-color: #fa0e89;
+  --secondary-color: #b60ca0;
+  --terceary-color: #7209b7;
+
+  --darkPurple: #1f0c30;
+  --bg-dark: #151515;
+  --light-gery: #e1e1e1;
+
+  --title: "Josefin Sans";
+  --regular: "Roboto";
+}
+
+/* NORMALIZE */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+/**********************************************/
+/* UTILES */
+/**********************************************/
+
+.boton__fill {
+  padding: 8px 15px;
+  background-color: var(--secondary-color);
+  border-radius: 5px;
+
+  color: white;
+}
+
+.boton-center {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.boton-box {
+  display: inline-block;
+  margin: 15px 0;
+}
+
+.a-link {
+  color: white;
+}
+
+.a-link__dark {
+  color: var(--darkPurple);
+}
+.a-link__pink {
+  color: var(--secondary-color);
+}
+
+/* INTERN HERO */
+
+.intern-hero__img {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+
+  filter: brightness(0.5);
+}

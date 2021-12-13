@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- escala del viewpoint-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link para FONTAWESOME - Iconos-->
+    <script src="https://kit.fontawesome.com/0082413ecf.js" crossorigin="anonymous"></script>
+    <!-- link al style -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- FAVICON -->
+    <link rel="icon" href="../image/SM_logo.ico">
+    <!-- titulo de la pagina -->
+    <title>Agencia de modelos en Perú | Soy Modelo</title>
+
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="main-nav row">
+            <img src="../image/SM_logo.png" alt="Logo Soy Modelo" Class="logo">
+
+            <ul class="menu-bar">
+                <li><a href="../../index.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="modelos.html">Modelos</a></li>
+                <li><a href="imodel.html">I-Model</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            <div class="menu-mobile">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <div class="intern-hero">
+                <img src="../image/intern_hero.jpg" alt="hero interno" class="intern-hero__img">
+            </div>
+        </section>
+
+        <section class="contact row">
+
+            <h1>Contáctanos</h1>
+
+            <div class="contact-box">
+                <div class="contact-content">
+                    <h2>Queremos conocerte</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis blanditiis expedita ducimus
+                        recusandae ipsam iure laborum commod.</p>
+                    <div class="contact-content__info">
+                        <ul>
+                            <li><i class="fas fa-map-marker-alt"></i>
+                                <p>Calle Quino 234, San Isidro</p>
+                            </li>
+                            <li><i class="fas fa-phone-alt"></i><a href="tel:877255945">877-255-945</a></li>
+                            <li><i class="fas fa-envelope"></i><a
+                                    href="mailto:info@soymodelo.com">info@soymodelo.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form action="contact.php" method="post">
+                        <label for="email" style="display:none">correo</label>
+                        <input type="text" id="email" placeholder="correo">
+
+                        <label for="Servicio" style="display:none">Servicio</label>
+                        <select name="servicio" id="servicio">
+                            <option value="">--Selecciona un servicio--</option>
+                            <option value="1">Fotografia</option>
+                            <option value="2">Produccion Audiovisual</option>
+                        </select>
+
+                        <label for="mensaje" style="display:none">Mensaje</label>
+                        <textarea name="mensaje" id="mensaje" cols="30" rows="10"
+                            placeholder="¿Cómo podemos ayudarte?"></textarea>
+
+                    </form>
+                    <input type="submit" value="Enviar">
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="contact-map">
+                <div class="mapouter">
+                    <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas"
+                            src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                            href="https://www.embedgooglemap.net/blog/divi-discount-code-elegant-themes-coupon/">divi
+                            discount</a><br>
+                        <style>
+                            .mapouter {
+                                position: relative;
+                                text-align: right;
+                                height: 500px;
+                                width: 600px;
+                            }
+                        </style><a href="https://www.embedgooglemap.net">google maps for web</a>
+                        <style>
+                            .gmap_canvas {
+                                overflow: hidden;
+                                background: none !important;
+                                height: 500px;
+                                width: 600px;
+                            }
+                        </style>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="social">
+            <div class="social__content row">
+                <p>Sigue nuestras redes sociales y entérate más sobre nuestros eventos</p>
+                <div class="sn_icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer-box">
+            <img src="../image/SM_logo_footer.png" alt="footer logo" class="footer-box__logo">
+            <p class="footer-box__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eligendi
+                asperiores eos dolor repudiandae alias, labore aspernatur optio.</p>
+            <nav class="footer-box__menu">
+                <ul>
+                    <li><a href="../../index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="modelos.html">Modelos</a></li>
+                    <li><a href="imodel.html">I-Model</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+</body>
+
+</html>

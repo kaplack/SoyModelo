@@ -1,0 +1,59 @@
+/* header */
+
+header {
+  background: linear-gradient(
+    to right,
+    var(--main-color),
+    var(--terceary-color)
+  );
+  position: relative;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+nav.main-nav {
+  height: 60px;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo {
+  width: 180px;
+  height: auto;
+}
+
+.menu-bar {
+  margin-right: 15px;
+}
+
+.menu-bar a {
+  text-decoration: none;
+  color: white;
+  padding: 3px 5px;
+  border-bottom: 1px solid rgba(250, 250, 250, 0);
+  transition: border-bottom 0.3s;
+}
+
+.menu-bar a:hover {
+  border-bottom: 1px solid white;
+}
+
+.menu-bar li {
+  display: inline-block;
+}
+.menu-bar li:not(:last-child) {
+  margin-right: 10px;
+}
+
+.menu-mobile {
+  display: none;
+}
+
+.menu-mobile i {
+  cursor: pointer;
+  margin-right: 15px;
+  font-size: 150%;
+}

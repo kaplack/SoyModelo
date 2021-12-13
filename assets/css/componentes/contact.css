@@ -1,0 +1,38 @@
+.contact {
+  margin-top: 40px;
+}
+
+.contact h1 {
+  text-align: center;
+}
+.contact-box {
+  margin: 40px 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact-box div {
+  flex: 1 0 350px;
+}
+
+section .contact-map {
+  margin-top: 50px;
+}
+
+.contact-map .mapouter {
+  width: unset;
+}
+
+.contact-map .gmap_canvas {
+  width: unset;
+}
+
+#gmap_canvas {
+  width: 100%;
+}
+
+.contact-form form input,
+.contact-form form select {
+  width: 100%;
+  margin-bottom: 10px;
+}

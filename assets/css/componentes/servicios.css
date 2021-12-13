@@ -1,0 +1,51 @@
+.servicios {
+  margin: 50px 0;
+}
+
+.servicios h1 {
+  margin-left: 10px;
+  margin-bottom: 30px;
+}
+
+.servicios-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.servicios-content div {
+  height: 350px;
+}
+
+.servicios-content div div {
+  margin: 25px;
+}
+.servicios-content div div p {
+  font-size: 80%;
+}
+
+.fotografia {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.fotografia img {
+  width: 50%;
+  object-fit: cover;
+  object-position: top;
+}
+.fotografia div {
+  width: 50%;
+}
+
+.audiovisual {
+  display: flex;
+}
+
+.audiovisual img {
+  width: 50%;
+  object-fit: cover;
+}
+
+.audiovisual div {
+  width: 50%;
+}

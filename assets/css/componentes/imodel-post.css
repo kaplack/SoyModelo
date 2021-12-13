@@ -1,0 +1,11 @@
+.video-detail {
+  display: flex;
+}
+
+.video-detail__text {
+  width: 50%;
+}
+
+.video-detail iframe {
+  width: 50%;
+}
