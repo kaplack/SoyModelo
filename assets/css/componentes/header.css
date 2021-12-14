@@ -52,7 +52,7 @@ nav .logo {
   display: none;
 }
 .menu-mobile__close {
-  display: none;
+  display: none !important;
 }
 
 .menu-mobile i {
