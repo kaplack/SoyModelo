@@ -51,6 +51,9 @@ nav .logo {
 .menu-mobile {
   display: none;
 }
+.menu-mobile__close {
+  display: none;
+}
 
 .menu-mobile i {
   cursor: pointer;

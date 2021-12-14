@@ -4,7 +4,7 @@
 html {
   font-family: var(--regular);
   background-color: var(--darkPurple);
-  color: var(--light-gery);
+  color: var(--light-grey);
 }
 
 .row {
