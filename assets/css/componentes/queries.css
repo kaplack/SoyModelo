@@ -9,6 +9,8 @@
 
   .menu-mobile__close {
     position: absolute;
+    visibility: visible;
+    opacity: 1;
     top: 10px;
     left: -45px;
   }

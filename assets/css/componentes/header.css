@@ -52,7 +52,8 @@ nav .logo {
   display: none;
 }
 .menu-mobile__close {
-  display: none !important;
+  visibility: hidden;
+  opacity: 0;
 }
 
 .menu-mobile i {
