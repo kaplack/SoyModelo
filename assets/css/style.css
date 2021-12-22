@@ -52,6 +52,22 @@
   color: white;
 }
 
+.boton__ghost {
+  padding: 8px 15px;
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+  transition: all 0.3s;
+}
+.boton__ghost:hover {
+  padding: 8px 15px;
+  border: 1px solid var(--secondary-color);
+  background-color: var(--secondary-color);
+  border-radius: 5px;
+
+  color: white;
+}
+
 .boton-center {
   text-align: center;
   padding: 50px 0;
