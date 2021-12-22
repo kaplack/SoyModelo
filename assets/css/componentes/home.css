@@ -9,7 +9,7 @@
   position: relative;
   height: 600px;
   width: 100%;
-  background: url(/assets/image/Slider1.jpg);
+  background: url(../../image/Slider1.jpg);
   background-position: center;
   background-size: cover;
   -webkit-animation: banner 28s infinite linear;
