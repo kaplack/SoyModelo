@@ -1,10 +1,14 @@
+/* CONTENEDOR PRINCIPAL */
 .contact {
   margin-top: 40px;
 }
 
 .contact h1 {
   text-align: center;
+  color: var(--main-color);
 }
+
+/* CONTENEDOR contact-box */
 .contact-box {
   margin: 40px 10px;
   display: flex;
@@ -15,6 +19,84 @@
   flex: 1 0 350px;
 }
 
+/* CONTENT */
+
+.contact-content__info p {
+  display: inline-block;
+  margin: 0;
+}
+
+.contact-content__info ul li {
+  margin-bottom: 10px;
+}
+
+.contact-content__info ul li i {
+  font-size: 120%;
+  margin-right: 5px;
+  color: var(--main-color);
+}
+
+.contact-content__info ul li a {
+  color: white;
+}
+
+/* FORMULARIO */
+.contact-form form select {
+  margin-bottom: 10px;
+  width: 100%;
+  border-radius: 5px;
+  height: 38px;
+  padding: 5px;
+}
+
+.contact-form form select:focus {
+  box-shadow: 0px 0px 10px var(--main-color);
+  outline: var(--main-color);
+}
+
+.contact-form form input {
+  width: calc(100% - 20px);
+  border-radius: 5px;
+  height: 30px;
+  padding: 5px 10px;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.contact-form form input:focus {
+  box-shadow: 0px 0px 10px var(--main-color);
+  outline: var(--main-color);
+}
+
+.contact-form form textarea {
+  margin-bottom: 10px;
+  width: calc(100% - 10px);
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+}
+
+.contact-form form textarea:focus {
+  box-shadow: 0px 0px 10px var(--main-color);
+  outline: var(--main-color);
+}
+
+.contact-form input[type="submit"] {
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 10px 15px;
+  background-color: transparent;
+  color: white;
+  transition: all 0.3s;
+}
+
+.contact-form input[type="submit"]:hover {
+  background-color: var(--main-color);
+  border: 1px solid var(--main-color);
+  color: white;
+}
+
+/* Contenedor conctact-map */
 section .contact-map {
   margin-top: 50px;
 }
@@ -29,10 +111,4 @@ section .contact-map {
 
 #gmap_canvas {
   width: 100%;
-}
-
-.contact-form form input,
-.contact-form form select {
-  width: 100%;
-  margin-bottom: 10px;
 }

@@ -5,8 +5,31 @@
 /******************************************** hero *********************************/
 
 .hero-box {
+  display: block;
   position: relative;
+  height: 600px;
+  width: 100%;
+  background: url(/assets/image/Slider1.jpg);
+  background-position: center;
+  background-size: cover;
+  -webkit-animation: banner 28s infinite linear;
+  animation: banner 28s infinite linear;
+
+  transition: all 0.3s ease-in-out;
 }
+
+.hero-box::before {
+  content: "";
+  height: 100%;
+  display: block;
+  background: linear-gradient(
+    to bottom right,
+    var(--terceary-color),
+    var(--secondary-color)
+  );
+  opacity: 0.3;
+}
+
 .hero-box__content {
   position: absolute;
   top: 50%;
@@ -21,16 +44,14 @@
 .hero-box__content h1 {
   font-size: 300%;
 }
-
+/*
 .hero-box__img {
-  height: 600px;
-  width: 100%;
   object-fit: cover;
   object-position: top;
 
   filter: brightness(0.5);
 }
-
+*/
 .boton-box div {
   display: inline-block;
 }
@@ -102,6 +123,8 @@ section.como-funciona {
   flex: 1 0 180px;
 
   height: 250px;
+  -o-object-fit: cover;
   object-fit: cover;
+  -o-object-position: center;
   object-position: center;
 }
