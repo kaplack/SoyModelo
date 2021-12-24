@@ -11,7 +11,7 @@
 .articulo {
   width: 30%;
   flex: 1 0 200px;
-  border-left: 1px solid var(--main-color);
+  border-left: 1px solid $main-color;
 }
 
 .articulo__content {
@@ -21,7 +21,8 @@
 .articulo img {
   width: 100%;
   height: 450px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 
   border-left: 1px solid transparent;
 }

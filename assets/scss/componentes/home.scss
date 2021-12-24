@@ -9,7 +9,7 @@
   position: relative;
   height: 600px;
   width: 100%;
-  background: url(../../image/Slider1.jpg);
+  background: url(../image/Slider1.jpg);
   background-position: center;
   background-size: cover;
   -webkit-animation: banner 28s infinite linear;
@@ -24,8 +24,8 @@
   display: block;
   background: linear-gradient(
     to bottom right,
-    var(--terceary-color),
-    var(--secondary-color)
+    $terceary-color,
+    $secondary-color
   );
   opacity: 0.3;
 }
@@ -79,7 +79,7 @@ section.como-funciona {
   text-align: center;
 }
 .como-funciona__content--box1 h1 {
-  color: var(--main-color);
+  color: $main-color;
   font-size: 300%;
 }
 
@@ -97,15 +97,15 @@ section.como-funciona {
   display: inline-block;
   transform: translate(-10%, 5%);
   font-weight: 700;
-  color: var(--secondary-color);
+  color: $secondary-color;
   padding: 8px 13px;
 
-  border: 1px solid var(--secondary-color);
+  border: 1px solid $secondary-color;
   border-radius: 50%;
 }
 
 .box3__content h3 {
-  color: var(--secondary-color);
+  color: $secondary-color;
 }
 
 /*********************************************** MODELOS *************************************************************/

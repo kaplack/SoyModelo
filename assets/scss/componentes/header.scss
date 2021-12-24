@@ -1,11 +1,7 @@
 /* header */
 
 header {
-  background: linear-gradient(
-    to right,
-    var(--main-color),
-    var(--terceary-color)
-  );
+  background: linear-gradient(to right, $main-color, $terceary-color);
   position: relative;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
   z-index: 10;

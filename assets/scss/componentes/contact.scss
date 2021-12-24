@@ -5,7 +5,7 @@
 
 .contact h1 {
   text-align: center;
-  color: var(--main-color);
+  color: $main-color;
 }
 
 /* CONTENEDOR contact-box */
@@ -33,7 +33,7 @@
 .contact-content__info ul li i {
   font-size: 120%;
   margin-right: 5px;
-  color: var(--main-color);
+  color: $main-color;
 }
 
 .contact-content__info ul li a {
@@ -50,8 +50,8 @@
 }
 
 .contact-form form select:focus {
-  box-shadow: 0px 0px 10px var(--main-color);
-  outline: var(--main-color);
+  box-shadow: 0px 0px 10px $main-color;
+  outline: $main-color;
 }
 
 .contact-form form input {
@@ -64,8 +64,8 @@
 }
 
 .contact-form form input:focus {
-  box-shadow: 0px 0px 10px var(--main-color);
-  outline: var(--main-color);
+  box-shadow: 0px 0px 10px $main-color;
+  outline: $main-color;
 }
 
 .contact-form form textarea {
@@ -77,8 +77,8 @@
 }
 
 .contact-form form textarea:focus {
-  box-shadow: 0px 0px 10px var(--main-color);
-  outline: var(--main-color);
+  box-shadow: 0px 0px 10px $main-color;
+  outline: $main-color;
 }
 
 .contact-form input[type="submit"] {
@@ -91,8 +91,8 @@
 }
 
 .contact-form input[type="submit"]:hover {
-  background-color: var(--main-color);
-  border: 1px solid var(--main-color);
+  background-color: $main-color;
+  border: 1px solid $main-color;
   color: white;
 }
 

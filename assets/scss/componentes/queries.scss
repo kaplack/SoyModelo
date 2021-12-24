@@ -17,7 +17,7 @@
 
   .menu-mobile__close i {
     font-size: 250%;
-    color: var(--light-grey);
+    color: $light-grey;
   }
 
   .menu-bar {
@@ -27,7 +27,7 @@
     width: 80%;
     top: 0;
     right: 0;
-    background-color: var(--terceary-color);
+    background-color: $terceary-color;
 
     display: flex;
     flex-direction: column;
@@ -103,6 +103,7 @@
   .como-funciona__content {
     margin: 0 15px;
     grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, -webkit-max-content);
     grid-template-rows: repeat(3, max-content);
     grid-gap: 40px;
   }
