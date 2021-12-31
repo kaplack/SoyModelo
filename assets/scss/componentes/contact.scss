@@ -1,11 +1,10 @@
 /* CONTENEDOR PRINCIPAL */
 .contact {
   margin-top: 40px;
-}
-
-.contact h1 {
-  text-align: center;
-  color: $main-color;
+  h1 {
+    text-align: center;
+    color: $main-color;
+  }
 }
 
 /* CONTENEDOR contact-box */
@@ -13,87 +12,92 @@
   margin: 40px 10px;
   display: flex;
   flex-wrap: wrap;
-}
-
-.contact-box div {
-  flex: 1 0 350px;
+  div {
+    flex: 1 0 350px;
+  }
 }
 
 /* CONTENT */
 
-.contact-content__info p {
-  display: inline-block;
-  margin: 0;
-}
+.contact-content__info {
+  p {
+    display: inline-block;
+    margin: 0;
+  }
+  ul li {
+    margin-bottom: 10px;
+    i {
+      font-size: 120%;
+      margin-right: 5px;
+      color: $main-color;
+    }
 
-.contact-content__info ul li {
-  margin-bottom: 10px;
-}
-
-.contact-content__info ul li i {
-  font-size: 120%;
-  margin-right: 5px;
-  color: $main-color;
-}
-
-.contact-content__info ul li a {
-  color: white;
+    a {
+      color: white;
+    }
+  }
 }
 
 /* FORMULARIO */
-.contact-form form select {
-  margin-bottom: 10px;
-  width: 100%;
-  border-radius: 5px;
-  height: 38px;
-  padding: 5px;
-}
 
-.contact-form form select:focus {
+@mixin form-focus {
   box-shadow: 0px 0px 10px $main-color;
   outline: $main-color;
 }
 
-.contact-form form input {
-  width: calc(100% - 20px);
-  border-radius: 5px;
-  height: 30px;
-  padding: 5px 10px;
-  border: none;
-  margin-bottom: 10px;
-}
+.contact-form {
+  form {
+    select {
+      margin-bottom: 10px;
+      width: 100%;
+      border-radius: 5px;
+      height: 38px;
+      padding: 5px;
 
-.contact-form form input:focus {
-  box-shadow: 0px 0px 10px $main-color;
-  outline: $main-color;
-}
+      &:focus {
+        @include form-focus;
+      }
+    }
 
-.contact-form form textarea {
-  margin-bottom: 10px;
-  width: calc(100% - 10px);
-  border-radius: 5px;
-  border: none;
-  padding: 5px;
-}
+    input {
+      margin-bottom: 10px;
+      width: calc(100% - 20px);
+      border-radius: 5px;
+      height: 30px;
+      padding: 5px 10px;
+      border: none;
 
-.contact-form form textarea:focus {
-  box-shadow: 0px 0px 10px $main-color;
-  outline: $main-color;
-}
+      &:focus {
+        @include form-focus;
+      }
+    }
 
-.contact-form input[type="submit"] {
-  border: 1px solid white;
-  border-radius: 5px;
-  padding: 10px 15px;
-  background-color: transparent;
-  color: white;
-  transition: all 0.3s;
-}
+    textarea {
+      margin-bottom: 10px;
+      width: calc(100% - 10px);
+      border-radius: 5px;
+      border: none;
+      padding: 5px;
+      &:focus {
+        @include form-focus;
+      }
+    }
+  }
 
-.contact-form input[type="submit"]:hover {
-  background-color: $main-color;
-  border: 1px solid $main-color;
-  color: white;
+  input[type="submit"] {
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px 15px;
+    background-color: transparent;
+    color: white;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: $main-color;
+      border: 1px solid $main-color;
+      color: white;
+    }
+  }
 }
 
 /* Contenedor conctact-map */

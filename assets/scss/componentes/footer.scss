@@ -5,25 +5,23 @@ footer {
 .social {
   background-color: $terceary-color;
   padding: 0 10px;
-}
+  &__content {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a {
+      color: white;
 
-.social__content {
-  padding: 10px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+      &:not(:last-child) {
+        margin-right: 15px;
+      }
 
-.social__content a {
-  color: white;
-}
-
-.social__content a i {
-  font-size: 150%;
-}
-
-.social__content a:not(:last-child) {
-  margin-right: 15px;
+      i {
+        font-size: 150%;
+      }
+    }
+  }
 }
 
 .footer-box {
@@ -31,32 +29,32 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
 
-.footer-box__logo {
-  width: 180px;
-}
+  &__logo {
+    width: 180px;
+  }
 
-.footer-box__text {
-  max-width: 500px;
-  text-align: center;
-}
+  &__text {
+    max-width: 500px;
+    text-align: center;
+  }
 
-.footer-box__menu {
-  max-width: 600px;
-  padding: 10px 0;
-  border-top: 1px solid rgb(82, 82, 82);
-}
+  &__menu {
+    max-width: 600px;
+    padding: 10px 0;
+    border-top: 1px solid rgb(82, 82, 82);
 
-.footer-box__menu li {
-  display: inline-block;
-}
+    li {
+      display: inline-block;
 
-.footer-box__menu li:not(:last-child) {
-  margin-right: 15px;
-}
+      &:not(:last-child) {
+        margin-right: 15px;
+      }
 
-.footer-box__menu li a {
-  padding: 3px 5px;
-  color: white;
+      a {
+        padding: 3px 5px;
+        color: white;
+      }
+    }
+  }
 }

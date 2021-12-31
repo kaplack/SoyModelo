@@ -1,9 +1,11 @@
 /* COMPONENTES */
 @import "abstract/variables";
+@import "abstract/mixin";
 
 @import "base/animation";
 
 @import "componentes/general";
+@import "componentes/utiles";
 @import "componentes/layout";
 @import "componentes/home";
 @import "componentes/footer";
@@ -31,51 +33,6 @@
 /**********************************************/
 /* UTILES */
 /**********************************************/
-
-.boton__fill {
-  padding: 8px 15px;
-  background-color: $secondary-color;
-  border-radius: 5px;
-
-  color: white;
-}
-
-.boton__ghost {
-  padding: 8px 15px;
-  border: 1px solid white;
-  border-radius: 5px;
-  color: white;
-  transition: all 0.3s;
-}
-.boton__ghost:hover {
-  padding: 8px 15px;
-  border: 1px solid $secondary-color;
-  background-color: $secondary-color;
-  border-radius: 5px;
-
-  color: white;
-}
-
-.boton-center {
-  text-align: center;
-  padding: 50px 0;
-}
-
-.boton-box {
-  display: inline-block;
-  margin: 15px 0;
-}
-
-.a-link {
-  color: white;
-}
-
-.a-link__dark {
-  color: $darkPurple;
-}
-.a-link__pink {
-  color: $secondary-color;
-}
 
 /* INTERN HERO */
 

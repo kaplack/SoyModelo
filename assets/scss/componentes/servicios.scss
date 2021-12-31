@@ -1,51 +1,87 @@
 .servicios {
   margin: 50px 0;
-}
-
-.servicios h1 {
-  margin-left: 10px;
-  margin-bottom: 30px;
+  h1 {
+    margin-left: 10px;
+    margin-bottom: 30px;
+  }
 }
 
 .servicios-content {
   display: flex;
   flex-direction: column;
-}
+  .fotografia {
+    height: 350px;
+    display: flex;
+    @include respond(phone) {
+      height: unset;
+      flex-direction: column;
+    }
+  }
+  .audiovisual {
+    @extend .fotografia;
+  }
 
-.servicios-content div {
-  height: 350px;
-}
+  p {
+    font-size: 80%;
+  }
 
-.servicios-content div div {
-  margin: 25px;
-}
-.servicios-content div div p {
-  font-size: 80%;
+  .boton {
+    margin-top: 10px;
+    display: inline-block;
+  }
 }
 
 .fotografia {
-  display: flex;
-  flex-direction: row-reverse;
-}
+  img {
+    width: 50%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: top;
+    object-position: top;
+    @include respond(phone) {
+      width: 100%;
+    }
+  }
 
-.fotografia img {
-  width: 50%;
-  object-fit: cover;
-  object-position: top;
-}
-.fotografia div {
-  width: 50%;
-}
+  &__content {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    @include respond(phone) {
+      width: 100%;
+    }
 
+    &--box {
+      padding: 25px;
+    }
+  }
+}
 .audiovisual {
-  display: flex;
-}
+  flex-direction: row-reverse;
 
-.audiovisual img {
-  width: 50%;
-  object-fit: cover;
-}
+  img {
+    width: 50%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    @include respond(phone) {
+      width: 100%;
+    }
+  }
 
-.audiovisual div {
-  width: 50%;
+  &__content {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    @include respond(phone) {
+      width: 100%;
+    }
+
+    &--box {
+      padding: 25px;
+
+      text-align: right;
+    }
+  }
 }
