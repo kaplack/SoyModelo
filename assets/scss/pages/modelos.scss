@@ -1,0 +1,17 @@
+.todos-modelos {
+  margin: 50px 10px;
+  .boton-center {
+    font-size: 1.6rem;
+  }
+
+  .modelos-content h1 {
+    color: $main-color;
+  }
+}
+
+.galeria {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}

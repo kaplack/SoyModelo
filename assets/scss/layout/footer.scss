@@ -10,16 +10,36 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     a {
       color: white;
 
       &:not(:last-child) {
-        margin-right: 15px;
+        margin-right: 1.5rem;
+        @include respond(tab-port) {
+          margin-right: 0.2rem;
+        }
       }
 
       i {
-        font-size: 150%;
+        font-size: 2rem;
+        @include respond(tab-port) {
+          font-size: 1.8rem;
+        }
       }
+    }
+
+    p {
+      @include respond(tab-port) {
+        font-size: 1.2rem;
+      }
+      @include respond(phone) {
+        display: none;
+      }
+    }
+
+    @include respond(phone) {
+      justify-content: center;
     }
   }
 }
@@ -44,16 +64,27 @@ footer {
     padding: 10px 0;
     border-top: 1px solid rgb(82, 82, 82);
 
+    @include respond(phone) {
+      text-align: center;
+    }
+
     li {
       display: inline-block;
 
       &:not(:last-child) {
         margin-right: 15px;
+        @include respond(phone) {
+          margin-right: 0.8rem;
+        }
       }
 
       a {
         padding: 3px 5px;
         color: white;
+        font-size: 1.6rem;
+        @include respond(phone) {
+          font-size: 1.2rem;
+        }
       }
     }
   }

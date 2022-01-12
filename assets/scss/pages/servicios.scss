@@ -3,6 +3,7 @@
   h1 {
     margin-left: 10px;
     margin-bottom: 30px;
+    color: $orange;
   }
 }
 
@@ -22,12 +23,19 @@
   }
 
   p {
-    font-size: 80%;
+    font-size: 1.6rem;
   }
 
   .boton {
     margin-top: 10px;
     display: inline-block;
+    font-size: 1.6rem;
+  }
+
+  @include respond(phone) {
+    div div {
+      margin: 5px;
+    }
   }
 }
 

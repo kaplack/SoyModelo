@@ -15,25 +15,36 @@
   div {
     flex: 1 0 350px;
   }
+
+  @include respond(phone) {
+    gap: 20px;
+  }
 }
 
 /* CONTENT */
 
-.contact-content__info {
-  p {
-    display: inline-block;
-    margin: 0;
-  }
-  ul li {
-    margin-bottom: 10px;
-    i {
-      font-size: 120%;
-      margin-right: 5px;
-      color: $main-color;
+.contact-content {
+  &__info {
+    font-size: 1.6rem;
+    p {
+      display: inline-block;
+      margin: 0;
     }
+    ul li {
+      margin-bottom: 10px;
+      i {
+        display: inline-block;
+        margin-right: 5px;
+        color: $main-color;
 
-    a {
-      color: white;
+        &.fa-map-marker-alt {
+          padding-right: 3px;
+        }
+      }
+
+      a {
+        color: white;
+      }
     }
   }
 }
@@ -103,16 +114,16 @@
 /* Contenedor conctact-map */
 section .contact-map {
   margin-top: 50px;
-}
 
-.contact-map .mapouter {
-  width: unset;
-}
+  .mapouter {
+    width: unset;
+  }
 
-.contact-map .gmap_canvas {
-  width: unset;
-}
+  .gmap_canvas {
+    width: unset;
+  }
 
-#gmap_canvas {
-  width: 100%;
+  #gmap_canvas {
+    width: 100%;
+  }
 }

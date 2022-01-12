@@ -2,49 +2,23 @@
 @import "abstract/variables";
 @import "abstract/mixin";
 
+@import "base/base";
+@import "base/typography";
 @import "base/animation";
+@import "base/utiles";
 
-@import "componentes/general";
-@import "componentes/utiles";
-@import "componentes/layout";
-@import "componentes/home";
-@import "componentes/footer";
-@import "componentes/header";
-@import "componentes/servicios";
-@import "componentes/modelos";
-@import "componentes/imodel";
-@import "componentes/contact";
-@import "componentes/imodel-post";
+@import "componentes/button";
+@import "componentes/sn_icons";
+@import "componentes/model_card";
+@import "componentes/blog_card";
+@import "componentes/hero";
 
-@import "componentes/queries";
+@import "layout/footer";
+@import "layout/header";
 
-/* typography */
-
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&family=Roboto:wght@400;500&display=swap");
-
-/* NORMALIZE */
-
-* {
-  margin: 0;
-  padding: 0;
-  font-size: 16px;
-}
-
-/**********************************************/
-/* UTILES */
-/**********************************************/
-
-/* INTERN HERO */
-
-.intern-hero__img {
-  height: 250px;
-  width: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-  -o-object-position: center;
-  object-position: center;
-
-  -webkit-filter: brightness(0.5);
-
-  filter: brightness(0.5);
-}
+@import "pages/home";
+@import "pages/servicios";
+@import "pages/modelos";
+@import "pages/imodel";
+@import "pages/contact";
+@import "pages/imodel-post";
