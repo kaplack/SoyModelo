@@ -7,7 +7,7 @@
 }
 
 .boton__fill {
-  @include boton($secondary-color, 1px solid transparent);
+  @include boton($orange, 1px solid transparent);
 }
 
 .boton__ghost {

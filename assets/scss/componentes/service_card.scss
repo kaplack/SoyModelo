@@ -1,0 +1,153 @@
+.servicio {
+  flex: 0 0 300px;
+
+  background-color: white;
+  border-radius: 0.5rem;
+  overflow: hidden;
+
+  color: $bg-dark;
+  //margin-bottom: 4rem;
+  /*
+  &:not(:last-child) {
+    margin-right: 6rem;
+    @include respond(phone) {
+      margin-right: 2rem;
+    }
+    @include respond(phone) {
+      margin-right: 0;
+    }
+  }
+
+  @include respond(tab-port) {
+  }
+*/
+  img {
+    width: 100%;
+    height: 20rem;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+  }
+
+  &__content {
+    padding: 2rem 4rem;
+    color: $bg-dark;
+
+    ul li {
+      display: flex;
+      align-items: center;
+      i {
+        font-size: 2rem;
+        color: $orange;
+        flex: 0 0 40px;
+      }
+    }
+
+    &--footer {
+      margin: 2rem 0 1rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .price {
+        font-size: 2.2rem;
+        font-weight: 800;
+        color: inherit;
+      }
+
+      .boton__fill {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+
+/*
+.servicios-content {
+  display: flex;
+  flex-direction: column;
+  .fotografia {
+    height: 350px;
+    display: flex;
+    @include respond(phone) {
+      height: unset;
+      flex-direction: column;
+    }
+  }
+  .audiovisual {
+    @extend .fotografia;
+  }
+
+  p {
+    font-size: 1.6rem;
+  }
+
+  .boton {
+    margin-top: 10px;
+    display: inline-block;
+    font-size: 1.6rem;
+  }
+
+  @include respond(phone) {
+    div div {
+      margin: 5px;
+    }
+  }
+}
+
+.fotografia {
+  img {
+    width: 50%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: top;
+    object-position: top;
+    @include respond(phone) {
+      width: 100%;
+    }
+  }
+
+  &__content {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    @include respond(phone) {
+      width: 100%;
+    }
+
+    &--box {
+      padding: 25px;
+    }
+  }
+}
+.audiovisual {
+  flex-direction: row-reverse;
+
+  img {
+    width: 50%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    @include respond(phone) {
+      width: 100%;
+    }
+  }
+
+  &__content {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    @include respond(phone) {
+      width: 100%;
+    }
+
+    &--box {
+      padding: 25px;
+
+      text-align: right;
+    }
+  }
+}
+*/

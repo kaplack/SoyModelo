@@ -1,95 +1,21 @@
 .servicios {
   margin: 50px 0;
+
+  &__box {
+    @include respond(tab-land) {
+      padding: 0 1rem;
+    }
+  }
   h1 {
     margin-left: 10px;
     margin-bottom: 30px;
     color: $orange;
   }
-}
-
-.servicios-content {
-  display: flex;
-  flex-direction: column;
-  .fotografia {
-    height: 350px;
-    display: flex;
-    @include respond(phone) {
-      height: unset;
-      flex-direction: column;
-    }
-  }
-  .audiovisual {
-    @extend .fotografia;
-  }
-
-  p {
-    font-size: 1.6rem;
-  }
-
-  .boton {
-    margin-top: 10px;
-    display: inline-block;
-    font-size: 1.6rem;
-  }
-
-  @include respond(phone) {
-    div div {
-      margin: 5px;
-    }
-  }
-}
-
-.fotografia {
-  img {
-    width: 50%;
-    -o-object-fit: cover;
-    object-fit: cover;
-    -o-object-position: top;
-    object-position: top;
-    @include respond(phone) {
-      width: 100%;
-    }
-  }
 
   &__content {
-    width: 50%;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    @include respond(phone) {
-      width: 100%;
-    }
-
-    &--box {
-      padding: 25px;
-    }
-  }
-}
-.audiovisual {
-  flex-direction: row-reverse;
-
-  img {
-    width: 50%;
-    -o-object-fit: cover;
-    object-fit: cover;
-    @include respond(phone) {
-      width: 100%;
-    }
-  }
-
-  &__content {
-    width: 50%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    @include respond(phone) {
-      width: 100%;
-    }
-
-    &--box {
-      padding: 25px;
-
-      text-align: right;
-    }
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6.5rem;
   }
 }
